@@ -5,7 +5,7 @@
         <div class="container">
 
             <ol>
-                <li><a class="text-yellow-600" href="{{ route('frontend.user.index') }}">Inicio</a></li>
+                <li><a class="text-green-600" href="{{ route('frontend.user.index') }}">Inicio</a></li>
                 <li>Documentos</li>
             </ol>
             <h2>Documentos</h2>

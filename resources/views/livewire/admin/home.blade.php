@@ -6,7 +6,7 @@
             display: block;
             width: 50px;
             height: 3px;
-            background: #e96b56;
+            background: #70B22D;
             margin-top: 16px;
             left: calc(50% - 25px);
         }
@@ -16,7 +16,7 @@
     <div id="controls-carousel" class="relative" data-carousel="static">
         <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
             <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-                <img  class="w-full h-full" src="{{ asset('/img/Banner_Administrativo.png') }}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img  class="w-full h-full" src="{{ asset('/img/Banner_Administrativo.svg') }}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
         </div>
     </div>

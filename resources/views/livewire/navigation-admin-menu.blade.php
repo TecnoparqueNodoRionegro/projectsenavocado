@@ -25,50 +25,50 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-7 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link  class="navbar text-yellow-600 hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.index') }}" :active="request()->routeIs('admin.index')">
+                    <x-jet-nav-link  class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.index') }}" :active="request()->routeIs('admin.index')">
                         Home
                     </x-jet-nav-link>
 
                     @can('superadmin.users.index')
-                        <x-jet-nav-link  class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('superadmin.users.index') }}" :active="request()->routeIs('superadmin.users.index')">
+                        <x-jet-nav-link  class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('superadmin.users.index') }}" :active="request()->routeIs('superadmin.users.index')">
                             Usuarios
                         </x-jet-nav-link>
                     @endcan
 
                     @cannot('superadmin.users.index')
-                        <x-jet-nav-link  class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.banners.index') }}" :active="request()->routeIs('admin.banners.index')">
+                        <x-jet-nav-link  class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.banners.index') }}" :active="request()->routeIs('admin.banners.index')">
                             Banner
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link  class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.modules.index') }}" :active="request()->routeIs('admin.modules.index')">
+                        <x-jet-nav-link  class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.modules.index') }}" :active="request()->routeIs('admin.modules.index')">
                             Módulos
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link  class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.videos.index') }}" :active="request()->routeIs('admin.videos.index')">
+                        <x-jet-nav-link  class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.videos.index') }}" :active="request()->routeIs('admin.videos.index')">
                             Videos
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.formats.index') }}" :active="request()->routeIs('admin.formats.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.formats.index') }}" :active="request()->routeIs('admin.formats.index')">
                             Formatos
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.stations.index') }}" :active="request()->routeIs('admin.stations.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.stations.index') }}" :active="request()->routeIs('admin.stations.index')">
                             Estaciones
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.authors.index') }}" :active="request()->routeIs('admin.authors.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.authors.index') }}" :active="request()->routeIs('admin.authors.index')">
                             Autores
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.documents.index') }}" :active="request()->routeIs('admin.documents.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.documents.index') }}" :active="request()->routeIs('admin.documents.index')">
                             Documentos
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.playlists.index') }}" :active="request()->routeIs('admin.playlists.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.playlists.index') }}" :active="request()->routeIs('admin.playlists.index')">
                             Playlists
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link class="navbar hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('admin.veredas.index') }}" :active="request()->routeIs('admin.veredas.index')">
+                        <x-jet-nav-link class="navbar text-black-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('admin.veredas.index') }}" :active="request()->routeIs('admin.veredas.index')">
                             Veredas
                         </x-jet-nav-link>
                     @endcannot

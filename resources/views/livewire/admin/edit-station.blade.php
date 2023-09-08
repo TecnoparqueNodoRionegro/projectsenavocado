@@ -6,7 +6,7 @@
             display: block;
             width: 50px;
             height: 3px;
-            background: #e96b56;
+            background: #3AA901;
             margin-top: 16px;
             left: calc(50% - 25px);
         }

@@ -8,8 +8,8 @@
             <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                 @foreach ($banners as $banner)
                     @if($banner->status == '1')
-                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-                            <img  class="w-full h-full" src="{{ asset($banner->url_photo) }}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 banner flex items-center justify-center" data-carousel-item="active">
+                            <img  class="h-full" src="{{ asset($banner->url_photo) }}" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                         </div>
                     @endif
                 @endforeach

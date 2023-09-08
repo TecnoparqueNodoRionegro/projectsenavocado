@@ -30,7 +30,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-7 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link class="navbar text-base font-sans text-yellow-600 hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('frontend.user.index') }}" :active="request()->routeIs('user.index')">
+                    <x-jet-nav-link class="navbar text-base font-sans text-green-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('frontend.user.index') }}" :active="request()->routeIs('user.index')">
                         Home
                     </x-jet-nav-link>
 
@@ -39,7 +39,7 @@
                             <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="navbar text-base hover:text-yellow-600 focus:text-yellow-600 inline-flex items-center px-3 py-7 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                        class="navbar text-base hover:text-green-600 focus:text-green-600 inline-flex items-center px-3 py-7 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
                                         {{ __('Herramientas') }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
                                 </span>
                             </x-slot>
                             <x-slot name="content">
-                                <x-jet-dropdown-link class="calculadora hover:text-yellow-600 focus:text-yellow-600" href="{{ route('frontend.user.calculator') }}">
+                                <x-jet-dropdown-link class="calculadora hover:text-green-600 focus:text-green-600" href="{{ route('frontend.user.calculator') }}">
                                     {{ __('Calculadora de fertilización') }}
                                 </x-jet-dropdown-link>
                             </x-slot>
@@ -64,7 +64,7 @@
                             <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="hover:text-yellow-600 focus:text-yellow-600 inline-flex items-center px-3 py-5 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                        class="hover:text-green-600 focus:text-green-600 inline-flex items-center px-3 py-5 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
                                         {{ __('Formatos') }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -77,10 +77,10 @@
                                 </span>
                             </x-slot>
                             <x-slot name="content">
-                                <x-jet-dropdown-link class="hover:text-yellow-600 focus:text-yellow-600" href="{{ asset('/documents/Lista-Graf-Recomd.xlsx') }}">
+                                <x-jet-dropdown-link class="hover:text-green-600 focus:text-green-600" href="{{ asset('/documents/Lista-Graf-Recomd.xlsx') }}">
                                     {{ __('Global GAP') }}
                                 </x-jet-dropdown-link>
-                                <x-jet-dropdown-link class="hover:text-yellow-600 focus:text-yellow-600" href="{{ asset('/documents/MATRIZ 2020 SENA Costos Pdccion año 1 a 7.xlsm') }}">
+                                <x-jet-dropdown-link class="hover:text-green-600 focus:text-green-600" href="{{ asset('/documents/MATRIZ 2020 SENA Costos Pdccion año 1 a 7.xlsm') }}">
                                     {{ __('Plantilla de costos') }}
                                 </x-jet-dropdown-link>
                             </x-slot>
@@ -92,7 +92,7 @@
                             <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="navbar text-base hover:text-yellow-600 focus:text-yellow-600 inline-flex items-center px-3 py-7 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                        class="navbar text-base hover:text-green-600 focus:text-green-600 inline-flex items-center px-3 py-7 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
                                         {{ __('Videos') }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -105,17 +105,17 @@
                                 </span>
                             </x-slot>
                             <x-slot name="content">
-                                <x-jet-dropdown-link class="video hover:text-yellow-600 focus:text-yellow-600" href="{{ route('frontend.user.palylist') }}">
+                                <x-jet-dropdown-link class="video hover:text-green-600 focus:text-green-600" href="{{ route('frontend.user.palylist') }}">
                                     {{ __('Playlist') }}
                                 </x-jet-dropdown-link>
-                                <x-jet-dropdown-link class="video hover:text-yellow-600 focus:text-yellow-600" href="https://www.youtube.com/results?search_query=aguacate+sena" target="_blank">
+                                <x-jet-dropdown-link class="video hover:text-green-600 focus:text-green-600" href="https://www.youtube.com/results?search_query=aguacate+sena" target="_blank">
                                     {{ __('Curso básico de aguacate') }}
                                 </x-jet-dropdown-link>
                             </x-slot>
                         </x-jet-dropdown>
                     </div>
 
-                    <x-jet-nav-link class="navbar text-base text-black hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('frontend.user.document') }}">
+                    <x-jet-nav-link class="navbar text-base text-black hover:text-green-600 focus:text-green-600 py-3" href="{{ route('frontend.user.document') }}">
                         Documentos
                     </x-jet-nav-link>
                 </div>
@@ -264,10 +264,10 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link class="text-yellow-600 hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('frontend.user.index') }}" :active="request()->routeIs('user.index')">
+            <x-jet-responsive-nav-link class="text-green-600 hover:text-green-600 focus:text-green-600 py-3" href="{{ route('frontend.user.index') }}" :active="request()->routeIs('user.index')">
                 Home
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link class="hover:text-yellow-600 focus:text-yellow-600" href="{{ route('frontend.user.calculator') }}">
+            <x-jet-responsive-nav-link class="hover:text-green-600 focus:text-green-600" href="{{ route('frontend.user.calculator') }}">
                 Calculadora de fertilización
             </x-jet-responsive-nav-link>
             {{--<x-jet-responsive-nav-link href="#">
@@ -276,13 +276,13 @@
             <x-jet-responsive-nav-link href="#">
                 Plantilla de costos
             </x-jet-responsive-nav-link>--}}
-            <x-jet-responsive-nav-link class="hover:text-yellow-600 focus:text-yellow-600" href="https://www.youtube.com/channel/UCrHtg4UEofVeQV5loAVx8cg" target="_blank">
+            <x-jet-responsive-nav-link class="hover:text-green-600 focus:text-green-600" href="https://www.youtube.com/channel/UCrHtg4UEofVeQV5loAVx8cg" target="_blank">
                 Canal de YouTube
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link class="hover:text-yellow-600 focus:text-yellow-600" href="https://www.youtube.com/results?search_query=aguacate+sena" target="_blank">
+            <x-jet-responsive-nav-link class="hover:text-green-600 focus:text-green-600" href="https://www.youtube.com/results?search_query=aguacate+sena" target="_blank">
                 Curso básico de aguacate
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link class="text-black hover:text-yellow-600 focus:text-yellow-600 py-3" href="{{ route('frontend.user.document') }}">
+            <x-jet-responsive-nav-link class="text-black hover:text-green-600 focus:text-green-600 py-3" href="{{ route('frontend.user.document') }}">
                 Documentos
             </x-jet-responsive-nav-link>
         </div>
