@@ -5,6 +5,17 @@
             font-family: "Poppins", sans-serif;
             font-size: 15px;
         }
+        .button{
+            background-color: #70B22D;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            color: #FFFFFF;
+        }
+        .button:hover{
+            background-color: #000000;
+            color : #FFFFFF;
+        }
+        
     </style>
 
     <!-- Primary Navigation Menu -->
@@ -109,6 +120,31 @@
                     <x-jet-nav-link class="navbar text-base text-black hover:text-green-600 focus:text-green-600 py-3" href="{{ route('frontend.user.document') }}">
                         Documentos
                     </x-jet-nav-link>
+                
+                    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            
+                    @if (Route::has('login'))
+                    
+                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                            @auth
+                            @else
+                            <button class="rounded-full mt-2 px-8 button">
+                                <a href="{{ route('login') }}">Iniciar sesión</a>
+                            </button>
+
+                                @if (Route::has('register'))
+                                <button class="rounded-full mt-2 px-8 button">
+                                    <a href="{{ route('register') }}">Registrate</a>
+                                </button>
+                                @endif
+                            @endauth
+                        </div>
+                    @endif      
+                </div>
+            </div>
+            
+
+
                 </div>
             </div>
 
@@ -343,6 +379,7 @@
                         <x-jet-switchable-team :team="$team" component="jet-responsive-nav-link" />
                     @endforeach
                 @endif
+                
             </div>
         </div>--}}
     </div>

@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::middleware([
     'auth:sanctum',
@@ -29,7 +27,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/homeGuest', [HomeGuest::class, 'render'])->name('homeGuest');
+Route::get('/', [HomeGuest::class, 'render'])->name('homeGuest');
 
 /*
  * Frontend Routes
