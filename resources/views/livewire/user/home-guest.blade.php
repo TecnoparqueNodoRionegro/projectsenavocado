@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    
     {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
     <title>Senavocado</title>
     <link href="/img/logo.png" rel="icon">
@@ -51,7 +51,7 @@
                 <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                         @foreach ($banners as $banner)
                             @if($banner->status == '1')
-                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 banner flex items-center justify-center" data-carousel-item="active">
+                            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 banner flex items-center justify-center h-full" data-carousel-item="active">
                                     <img class="h-full" src="{{ asset($banner->url_photo) }}" alt="...">
                                 </div>
                             @endif

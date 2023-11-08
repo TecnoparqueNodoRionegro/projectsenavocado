@@ -43,7 +43,7 @@
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <div class="text-sm font-medium text-gray-900">
-                                        {{ $video->url }}
+                                        <iframe width="400" height="220" src="{{ $video->url }}" title="Senavocado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">

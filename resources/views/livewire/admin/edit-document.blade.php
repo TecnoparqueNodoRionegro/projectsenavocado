@@ -59,18 +59,18 @@
                 </div>
 
                 {{-- Foto --}}
-                {{--<div class="mb-4">
+                <div class="mb-4">
                     <x-jet-label value="Foto" />
                     <x-jet-input type="file" wire:model="editForm.url_photo" class="w-full" />
                     <x-jet-input-error for="editForm.url_photo" />
-                </div>--}}
+                </div>
 
                 {{-- Archivo --}}
-                {{--<div class="mb-4">
+                <div class="mb-4">
                     <x-jet-label value="Archivo" />
                     <x-jet-input type="file" wire:model="editForm.url_file" class="w-full" />
                     <x-jet-input-error for="editForm.url_file" />
-                </div>--}}
+                </div>
                 
                 {{--Estado--}}
                 <div class="mb-4">

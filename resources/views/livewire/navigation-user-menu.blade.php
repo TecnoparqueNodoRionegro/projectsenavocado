@@ -1,17 +1,19 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-md">
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-md fixed top-0 left-0 w-full z-50">
 
     <style>
         .navbar{
             font-family: "Poppins", sans-serif;
             font-size: 15px;
         }
-
-        .calculadora:hover{
-            background-color: white;
+        .button{
+            background-color: #70B22D;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            color: #FFFFFF;
         }
-
-        .video:hover{
-            background-color: white;
+        .button:hover{
+            background-color: #000000;
+            color : #FFFFFF;
         }
 
     </style>
@@ -120,7 +122,23 @@
                     </x-jet-nav-link>
                 </div>
             </div>
+            @if (Route::has('login'))
+                    
+                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                        @auth
+                        @else
+                        <button class="rounded-full mt-2 px-8 button">
+                            <a href="{{ route('login') }}">Iniciar sesión</a>
+                        </button>
 
+                            @if (Route::has('register'))
+                            <button class="rounded-full mt-2 px-8 button">
+                                <a href="{{ route('register') }}">Registrate</a>
+                            </button>
+                            @endif
+                        @endauth
+                    </div>
+                @endif      
             @if (Route::has('login'))
                 @auth
                     <div class="hidden sm:flex sm:items-center sm:ml-6">

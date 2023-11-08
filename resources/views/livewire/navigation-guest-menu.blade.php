@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-md">
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-md fixed top-0 left-0 w-full z-50">
 
     <style>
         .navbar{
