@@ -27,6 +27,16 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/Panel', function () {
+        return view('Panel');
+    })->name('Panel');
+});
+
 Route::get('/', [HomeGuest::class, 'render'])->name('homeGuest');
 
 /*

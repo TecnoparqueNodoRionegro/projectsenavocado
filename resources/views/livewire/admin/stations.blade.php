@@ -5,6 +5,9 @@
             <x-button-enlace class="bg-green-500 hover:bg-green-500 ml-auto" href="{{ route('admin.station.create') }}">
                 Agregar
             </x-button-enlace>
+            <x-button-enlace class="bg-green-500 hover:bg-green-500 ml-auto" href="{{ route('Panel') }}">
+                Agregar panel
+            </x-button-enlace>
         </div>
     </x-slot>
 
